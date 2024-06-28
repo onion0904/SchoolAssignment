@@ -21,4 +21,9 @@ func main() {
 		}
 	}
 	fmt.Printf("Heads: %d, Tails: %d\n", count1, count2)
+	if count1 > count2 {
+		fmt.Println("You won!")
+    } else if count1 < count2 {
+		fmt.Println("You lost!")
+	}
 }
