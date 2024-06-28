@@ -7,6 +7,11 @@ import (
 )
 
 func main() {
+	fmt.Println("Who are you? ")
+	var name string
+	fmt.Printf(">")
+	fmt.Scanln(&name)
+	fmt.Printf("Hello, %s\n", name)
 	fmt.Println("Tossing a coin...")
 	rand.Seed(time.Now().UnixNano())
 	var count1, count2 int
